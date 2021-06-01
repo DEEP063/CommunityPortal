@@ -16,20 +16,20 @@
     <div class="container">
         <form action="<?php echo htmlentities($_SERVER["PHP_SELF"]);?>" method="POST">
             <div class="form-group">
-                <label for="user">Name:</label>
-                <input type="text" class="form-control" name="user">
+                <label for="username">User Name:</label>
+                <input type="text" class="form-control" name="username">
             </div>
 
             <div class="form-group">
-                <label for="qualification">Qualification:</label>
-                <input type="text" class="form-control" name="degree">
+                <label for="surname">Surname:</label>
+                <input type="text" class="form-control" name="surname">
             </div>
 
             <div class="form-group">
-                <label for="mobile">Mobile:</label>
+                <label for="mobile">Date Of Birth</label>
                 <input type="number" class="form-control " name="mobile">
             </div>
-
+            
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" name="email">
@@ -76,16 +76,16 @@ if(isset($_POST['submit'])){
 
     if($qurey){
         ?>
-        <script>
-        alert('Inserted Successfull');
-        </script>
-        <?php
+<script>
+    alert('Inserted Successfull');
+</script>
+<?php
     }else{
         ?>
-        <script>
-        alert('Inserted Fail');
-        </script>
-        <?php
+<script>
+    alert('Inserted Fail');
+</script>
+<?php
     }
 
 }

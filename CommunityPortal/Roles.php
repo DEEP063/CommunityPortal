@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Details</title>
+    <title>Role Details</title>
     <?php include 'links.php' ?>
 
 </head>
@@ -30,7 +30,7 @@
 
             <div class="form-check-inline">
                 <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optradio">Developersssss
+                    <input type="radio" class="form-check-input" name="optradio">Developer
                 </label>
             </div>
             

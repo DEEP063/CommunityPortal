@@ -1,0 +1,14 @@
+
+User deatils
+create table userdetails (id int NOT NULL auto_increment primary key,firstname varchar(15),surname varchar(15),dateofbirth date,email varchar(50),mobile varchar(15),country varchar(15),gender enum('male','female','other'),occupation varchar(30));
+
+roles
+create table roles (id int not null auto_increment primary key,role varchar(15) , description varchar(255));
+
+community
+
+create table community (id int not null auto_increment primary key,name varchar(50) , description varchar(255));
+
+user access mapping
+
+create table user_access_mappings (id int not null auto_increment primary key,username varchar(15) , password varchar(15) , role_id int ,community_id int,user_id int , foreign key(role_id) references roles(id),foreign key(community_id) references community(id),foreign key(user_id) references userdetails(id));

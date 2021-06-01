@@ -1,0 +1,10 @@
+ROLES TABLE
+create table roles(role_id INT(255) NOT NULL AUTO_INCREMENT,roles VARCHAR(255),description VARCHAR(255),PRIMARY KEY (role_id));
+
+USER ACCESS MAPPINGS TABLE
+create table user_access_mappings (user_access_mapping_id int(255) not null auto_increment primary key,username varchar(15) , password varchar(15) , role_id int(255) ,community_id int(255) , foreign key(role_id) references roles(role_id),foreign key(community_id) references community(community_id));
+ 
+
+COMMUNITY TABLE
+create table community (community_id int(255) not null auto_increment primary key,name varchar(255) , description varchar(255));
+

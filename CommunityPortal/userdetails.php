@@ -16,13 +16,28 @@
     <div class="container">
         <form action="<?php echo htmlentities($_SERVER["PHP_SELF"]);?>" method="POST">
             <div class="form-group">
-                <label for="user">User Name:</label>
-                <input type="text" class="form-control" name="user">
+                <label for="firstname">First Name:</label>
+                <input type="text" class="form-control" name="firstname">
             </div>
 
             <div class="form-group">
                 <label for="surname">Surname:</label>
                 <input type="text" class="form-control" name="surname">
+            </div>
+
+            <div class="form-group">
+                <label for="username">User Name:</label>
+                <input type="text" class="form-control" name="username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" name="password">
+            </div>
+
+            <div class="form-group">
+                <label for="confirmpassword">Confirm Password:</label>
+                <input type="password" class="form-control" name="confirmpassword">
             </div>
 
             <label for="gender">Gender:</label>&nbsp;
@@ -55,8 +70,8 @@
             </div>
 
             <div class="form-group">
-                <label for="email">Mobile No.:</label>
-                <input type="email" class="form-control" name="email">
+                <label for="mobile">Mobile No.:</label>
+                <input type="number" class="form-control" name="mobile">
             </div>
 
             <div class="form-group">

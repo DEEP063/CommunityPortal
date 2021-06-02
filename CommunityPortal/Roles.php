@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Role Details</title>
     <?php include 'links.php' ?>
-
 </head>
 
 <body><br><br><br>
@@ -18,23 +17,29 @@
         
             <div class="form-check-inline">
                 <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optradio">NDI Administrator
+               <a href="ndiadministratorlogin.php" class="btn btn-primary">NDI Administrator</a>
+                    
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+               <a href="administratorlogin.php" class="btn btn-dark"> Administrator</a>
+                    
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+               <a href="developerlogin.php" class="btn btn-info">Developer</a>
+                    
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+               <a href="userlogin.php" class="btn btn-success">User &nbsp;&nbsp;</a>
+                    
                 </label>
             </div>
 
-            <div class="form-check-inline">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optradio">Administrator
-                </label>
-            </div>
-
-            <div class="form-check-inline">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optradio">Developer
-                </label>
-            </div>
-            
-            
 
          </form>
     </div>
